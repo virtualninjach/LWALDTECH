@@ -1,0 +1,50 @@
+﻿@model LWALDTECH.Models.CustomerWorkstation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CustomerWorkstation</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkstationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkstationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkstationIPAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkstationIPAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkstationOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkstationOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CompanyName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.WorkstationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

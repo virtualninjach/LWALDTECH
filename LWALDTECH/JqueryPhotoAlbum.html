@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple JQUery photo album using googles libraries</title>
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./Scripts/Photo-Gallery.js"></script>
+
+    <link href="Content/photo-gallery.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="gallery-carousel">
+        <div id="gallery-large-image">
+            <table cellpadding="0" cellspacing="0" border="0">
+            <tr><td><img src="graphics/1209_12766469905.jpg"></td></tr></table>
+            <a title="View previous photo" class="gallery_hover gallery_hover_prev" href="javascript:;" id="rew-link-1"><div class="anchor-fill"></div><div>&nbsp;</div><div class="anchor-fill"></div></a>
+            <a title="View next photo" class="gallery_hover gallery_hover_next" href="javascript:;" id="ffw-link-1"><div class="anchor-fill"></div><div>&nbsp;</div><div class="anchor-fill"></div></a>
+        </div>
+        <div id="gallery-thumbnails">
+            <div id="thumbnails" class="gallery-thumbs">
+                <div id="thumbnail-slider" style="width: 504px; left:-0px;">
+                    <a href="javascript:;" class="selected-image"><img src="graphics/1209_12766469902.jpg"><div class="zoom-icon" style="display:block;"><img src="./Graphics/white-pixel.gif"></div></a>
+                    <a href="javascript:;"><img src="graphics/1209_12766469891.jpg"><div class="zoom-icon"><img src="./Graphics/white-pixel.gif"></div></a>
+                    <a href="javascript:;"><img src="graphics/1209_12766469905.jpg"><div class="zoom-icon"><img src="./Graphics/white-pixel.gif"></div></a>
+                    <a href="javascript:;"><img src="graphics/1209_12766469905.jpg"><div class="zoom-icon"><img src="./Graphics/white-pixel.gif"></div></a>
+                    <a href="javascript:;"><img src="graphics/1209_12766469905.jpg"><div class="zoom-icon"><img src="./Graphics/white-pixel.gif"></div></a>
+                    <a href="javascript:;"><img src="graphics/1209_12766469905.jpg"><div class="zoom-icon"><img src="./Graphics/white-pixel.gif"></div></a>
+                    <a href="javascript:;"><img src="graphics/1209_12766469905.jpg"><div class="zoom-icon"><img src="./Graphics/white-pixel.gif"></div></a>
+                </div>
+            </div>
+            <img class="scroll-arrow arrow-inactive" id="rew-link" src="./Graphics/arrow-scroll-left.png" alt="Previous image" />
+            <img class="scroll-arrow" id="ffw-link" src="./Graphics/arrow-scroll-right.png" alt="Next image" />
+            <div id="large-gallery-thumbnail"></div>
+            <div id="scroll-worded">
+                <a title="View previous photo" class="scroll-text" href="javascript:;" id="rew-link-2"></a>
+                <div id="scroll-text-info">Photo <span id="scroll-info-current">1</span> of <span id="scroll-info-total">7</span></div>
+                <a title="View next photo" class="scroll-text" href="javascript:;" id="ffw-link-2"></a>
+            </div>
+            <div id="thumbnail-descriptions">
+                <span>Picture1</span>
+                <span>This is picture 2</span>
+                <span>This is picture 3</span>
+                <span>This is picture 4</span>
+                <span>Picture 5</span>
+                <span>Picutre 6</span>
+                <span>Picture 7</span>
+            </div>
+            <div id="thumbnail-dates">
+                <span>01 May 2014</span>
+                <span>02 May 2014</span>
+                <span>03 June 2014</span>
+                <span>04 December 2014</span>
+                <span>1 May 2014</span>
+                <span>27 June 2014</span>
+                <span>3 December 2014</span>
+            </div>
+        </div>
+        <div id="gallery-image-info">
+            <h3 id="gallery-image-title">Title 1</h3>
+            <div id="gallery-image-mod-date">Images added: <span>10 Oct 2014</span></div>
+        </div>
+    </div>
+   
+</body>
+</html>

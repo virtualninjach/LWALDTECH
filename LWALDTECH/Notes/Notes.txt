@@ -1,0 +1,4 @@
+﻿
+http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages
+Console command - For install web api help page documentation
+install-package Microsoft.AspNet.WebApi.HelpPage

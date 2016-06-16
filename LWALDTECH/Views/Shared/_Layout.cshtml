@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Lindenwald Technology Solutions</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script src="~/Scripts/widgets.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+ <div class="navbar-collapse collapse">
+     <table class="nav navbar-nav" style="padding-left: 5px;padding-right: 5px">
+         <tr>
+             <td style="padding-left: 5px;padding-right: 5px">
+                 @Html.ActionLink("Lindenwald Technology Solutions", "Index", "Home", null, new { @class = "navbar-brand" })
+             </td>
+
+             <td style="padding-left: 5px;padding-right: 5px" >@Html.ActionLink("Home", "Index", "Home")</td>
+             <td style="padding-left: 5px;padding-right: 5px" >@Html.ActionLink("About", "About", "Home")</td>
+             <td style="padding-left: 5px;padding-right: 5px" >@Html.ActionLink("Contact", "Contact", "Home")</td>
+             <td style="padding-left: 5px;padding-right: 5px" >@Html.ActionLink("Products", "Index", "Products")</td>
+             <td style="padding-left: 5px;padding-right: 5px">@Html.ActionLink("Fun Stuff", "FunStuff")</td>
+             <td style="padding-left: 5px;padding-right: 5px">
+
+
+             </td>
+             <td>
+                 <form target='_blank' method=POST accept-charset="UTF-8" action='http://us4.startpage.com/do/search' style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px" id=searchsys name="searchsys" onsubmit="javascript:document.searchsys.query.value=document.searchsys.keyword.value;">
+                     <table style="border-bottom: #808080 1px solid; border-left: #808080 1px solid; border-top: #808080 1px solid; border-right: #808080 1px solid" border=0 cellspacing=0 cellpadding=0 height=38>
+                         <tbody>
+                             <tr>
+                                 <td align="center" valign=bottom style="padding-bottom: 1px; padding-left: 0px; padding-right: 5px; padding-top: 0px"><a style="background:url(http://startpage.com/graphics/startpage_searchbox_logo.jpg) no-repeat;filter: progid:dximagetransform.microsoft.alphaimageloader(src=http://startpage.com/graphics/startpage_searchbox_logo.jpg,sizingmethod='scale'); width: 70px; display: inline-block;  height: 38px" href='http://startpage.com'><img border=0 alt=StartPage src=http://startpage.com/graphics/spacer.gif width=70 height=38></a></td>
+                                 <td style="height: 38px;" height=38><input type=hidden name=query><input class="width_update_class" style="width : 260px; _height : 23px;   font : 14px verdana, arial, sans-serif; padding : 0px 6px; *padding : 1px 6px 6px; padding-top:1px !important; padding-bottom:1px !important;outline: none; background:white;" name=keyword><input value=sb type=hidden name=frm><input value=process_search type=hidden name=cmd><input value=english type=hidden name=language></td>
+                                 <td style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; height: 38px; padding-top: 0px" height=38><input style="margin: 0px 5px" value="Search" type=submit></td>
+                             </tr>
+                         </tbody>
+                     </table>
+                     <style type=text/css>
+                         .ie9fixq_opt1 {
+                             height: 23px !important;
+                             padding-top: 0px !important;
+                             padding-bottom: 0px !important;
+                         }
+                     </style>
+                 </form>
+             </td>
+             <td>@Html.Partial("_LoginPartial")</td>
+     </table>
+</div>
+</div>
+</div>
+<div class="container body-content">
+@RenderBody()
+<hr />
+
+<!-- Begin Footer Area-->
+        <footer>
+            <span id="cdSiteSeal1">
+            <script type="text/javascript" src="//tracedseals.starfieldtech.com/siteseal/get?scriptId=cdSiteSeal1&amp;cdSealType=Seal1&amp;sealId=55e4ye7y7mb73537d62a049b046d25360y7mb7355e4ye72f545444231f60b0fa"></script></span>
+            <p>&copy; @DateTime.Now.Year - Lindenwald Technology Solutions</p>
+        </footer>
+<!-- End Footer Aread-->
+    </div>
+   
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+   
+</body>
+</html>

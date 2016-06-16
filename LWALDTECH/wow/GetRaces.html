@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Json Wow Test</title>
+    <script type="text/javascript" src="../Scripts/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../Scripts/wowAPICalls.js"></script>
+    <script type="text/javascript">
+    
+        $(function () {
+            $('#ButtonUS').click(getAllRacesUS);
+            $('#ButtonEUGreatBritian').click(getAllRacesEUGreatBritian)
+            
+        });
+
+    </script>
+</head>
+<body>
+    <p> In order to have a little fun along with learning how to handle third 
+    party JSON Services I created a simple project to call the JSON providers for 
+    the World of Warcraft API since they are free and pretty well documented. See <a href="http://blizzard.github.io/api-wow-docs/">here</a></p>
+    <hr />
+    <form id="form1">
+            <input type="button" id="ButtonUS" value="Get World of Warcraft Races for US Local" />
+            <input type="button" id="ButtonEUGreatBritian" value="Get World of Warcraft Races for EU Great Britian" />
+            <div id="output"></div>
+        </form>
+    
+
+
+</body>
+</html>

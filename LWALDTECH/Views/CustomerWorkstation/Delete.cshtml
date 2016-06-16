@@ -1,0 +1,56 @@
+﻿@model LWALDTECH.Models.CustomerWorkstation
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CustomerWorkstation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkstationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkstationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkstationIPAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkstationIPAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkstationOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkstationOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CompanyName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
