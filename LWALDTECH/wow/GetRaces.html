@@ -8,7 +8,8 @@
     
         $(function () {
             $('#ButtonUS').click(getAllRacesUS);
-            $('#ButtonEUGreatBritian').click(getAllRacesEUGreatBritian)
+            $('#ButtonEU').click(getAllRacesEU)
+            $('#ButtonGetAchievment').click(getWoWAchievment)
             
         });
 
@@ -21,8 +22,9 @@
     <hr />
     <form id="form1">
             <input type="button" id="ButtonUS" value="Get World of Warcraft Races for US Local" />
-            <input type="button" id="ButtonEUGreatBritian" value="Get World of Warcraft Races for EU Great Britian" />
-            <div id="output"></div>
+            <input type="button" id="ButtonEU" value="Get World of Warcraft Races for EU" />
+        <input type="button" id="ButtonGetAchievment" value="Get Achievement Info" />    
+        <div id="output"></div>
         </form>
     
 

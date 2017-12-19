@@ -2,3 +2,19 @@
 http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages
 Console command - For install web api help page documentation
 install-package Microsoft.AspNet.WebApi.HelpPage
+
+
+API Info
+Application Registered!
+Game APIs: Basic Plan (2)
+Key: 6sunaaqxws2epqvznrwra26a5mtz6pf8
+Application
+lwaldtech
+Key: 
+6sunaaqxws2epqvznrwra26a5mtz6pf8 
+Secret: 
+vZSFUNqYWdvegQVMevQFxr3frSxd6J5S 
+Status: 
+active 
+Created: 
+5 seconds ago 
